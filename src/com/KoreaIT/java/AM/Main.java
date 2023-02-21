@@ -5,12 +5,19 @@ import java.util.List;
 import java.util.Scanner;
 
 class Main {
+	public static List<Article> articles;
+	
+	static {
+		articles = new ArrayList<>();
+	}
+	
 	public static void main(String[] args) {
 		System.out.println("== 프로그램 시작 ==");
 		
+		makeTestData();
+		
 		Scanner sc = new Scanner(System.in);
 		int ArticleId = 0;
-		List<Article> articles = new ArrayList<>();
 		
 		while (true) {
 			System.out.println("명령어 ) ");
@@ -133,6 +140,10 @@ class Main {
 		
 		System.out.println("== 프로그램 끝 ==");
 		sc.close();
+	}
+	
+	static void makeTestData() {
+		System.out.println("테스트를 위한 데이터를 생성합니다");
 	}
 }
 
