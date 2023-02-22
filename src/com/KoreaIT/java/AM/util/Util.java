@@ -1,9 +1,9 @@
-package com.KoreaIT.java.AM;
+package com.KoreaIT.java.AM.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-class Util {
+public class Util {
 	public static String getNowDateTimeStr() {
 		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		Date now = new Date();
